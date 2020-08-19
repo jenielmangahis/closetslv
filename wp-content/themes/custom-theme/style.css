@@ -1,0 +1,336 @@
+/*
+Theme Name: CLOSET LAS VEGAS
+Theme URI: http://holisticwebdevelopment2.com/
+Author: Bryan Bio
+Author URI: http://www.holisticwebpresence.com
+Description: Custom Theme for http://holisticwebdevelopment2.com/
+Version: 1.0
+*/
+/*------------------------------------*\
+    Fonts
+\*------------------------------------*/
+@font-face {
+    font-family: myriad-light;
+    src: url(fonts/myriad-light.otf);
+}
+@font-face {
+    font-family: myriad-bold;
+    src: url(fonts/myriad-bold.otf);
+}
+@font-face {
+    font-family: myriad-regular;
+    src: url(fonts/myriad-regular.otf);
+}
+/*------------------------------------*\
+   Main
+\*------------------------------------*/
+.sr-right {
+    text-align: right;
+    padding-right: 33px !important;
+}
+.cl-12 {
+    width: 100%;
+}
+.cl-6 {
+    width: 50%;
+}
+.cl-4 {
+    width: 33.333333%;
+    padding: 0px 10px 10px 10px;
+}
+select.transparent-dropdown {
+    border: 0px;
+    color: #494949;
+}
+.multi-select-menu {
+    margin-top: 22px;
+    border-radius: 4px;
+    box-shadow: -1px 3px 7px 0px rgb(0 0 0 / 38%);
+    border: 0px;
+    padding: 10px;
+}
+label.rf-label {
+    color: #494949;
+    margin-right: 10px;
+}
+button.filter-button {
+    min-width: 130px;
+    max-width: 500px;
+    border: 1px solid #8bb0f1;
+    border-radius: 3px;
+    padding: 6px 13px;
+    text-align: center;
+    font-size: 15px;
+    background: white;
+    position: relative;
+    color: #6a9bf1;
+    bottom: 3px;
+}
+form.select-multi div.multi-select-container span {
+    width: 100%;
+    min-width: 130px;
+    max-width: 500px;
+    clear: both;
+    padding: 7px 13px 5px 13px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    bottom: 3px;
+    box-shadow: none;
+}
+p, h1, h2, h3, h4, h5, h6, span, a {
+    font-family: 'myriad-regular';
+}
+img.img-logo {
+    max-width: 180px;
+    width: 100%;
+}
+.img-result {
+    width: 100%;
+    border-radius: 8px;
+}
+section.closet-result {
+    background: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+}
+a.page-number {
+    color: #676767;
+    background: white;
+    padding: 12px 23px 7px 23px;
+    border: 1px solid #bdbdbd;
+    margin-right: -1px;
+    font-size: 19px;
+}
+a.page-number:hover {
+    background: #2a92d7;
+    color: white;
+    text-decoration: none;
+}
+a.blue-link {
+    color: #2a92d7;
+    font-size: 16px;
+}
+ul.home-menu {
+    list-style: none;
+    color: #9dacb5;
+    padding: 12px 0px;
+    margin: 0 auto !important;
+    display: flex;
+}
+.column-7 {
+  width: 14.28%;
+}
+ul.home-menu li:hover {
+    color: white;
+}
+li.carit {
+    position: relative;
+    bottom: 1px;
+}
+ul.home-menu li {
+    float: left;
+    margin: 0 auto;
+    cursor: pointer;
+    font-family: 'myriad-light';
+    font-weight: 700;
+}
+ul.home-menu li a {
+    color: #08ffe3;
+}
+ul.home-menu li.carit::after {
+    font-family: 'ETmodules';
+    content: "\25be";
+    font-size: 16px;
+    margin-left: 10px;
+    position: relative;
+    font-weight: 800;
+    bottom: 2px;
+}
+li.menu-nav {
+    padding-top: 14px;
+    font-size: 16px;
+}
+.check-input input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.check-input input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  height: 24px;
+  width: 24px;
+  background-color: #eee0;
+  border: 1px solid white;
+}
+.check-input:hover input ~ .checkmark {
+  background-color: #61e0c3;
+}
+.check-input  input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+input.submit-button {
+    text-align: center;
+    width: 100%;
+    max-width: 170px;
+    color: white;
+    background: #2a92d7;
+    font-family: 'myriad-regular';
+    border: 1px solid white;
+    padding: 4px 10px 2px 10px;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.check-input input:checked ~ .checkmark:after {
+  display: block;
+}
+.check-input .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.check-label {
+    padding-left: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: 'myriad-regular';
+}
+section.closet-menu {
+    background: #1a3e52;
+    min-height: 72px;
+}
+section.closet-testimonial {
+    background: url(images/home/closet-bg-blue.jpg);
+    min-height: 500px;
+    background-size: cover;
+}
+section.closet-banner-b {
+    background: url(images/home/close-trucks.jpg);
+    min-height: 600px;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: #00000059;
+}
+.container-banner {
+    padding-top: 10%;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+h1.banner-title {
+    font-size: 72px !important;
+    font-family: 'myriad-bold';
+}
+a.banner-button {
+    background: #1a3e52;
+    padding: 10px 30px;
+    margin-top: 25px;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'myriad-bold';
+    font-size: 18px;
+}
+img.testimonial {
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+    border: 1px solid white;
+}
+.mlc-4 {
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 780px) {
+  .mlc-4 {
+      margin-left: 0rem;
+  }
+  a.page-number {
+    color: #676767;
+    background: white;
+    padding: 8px 14px 5px 14px;
+    border: 1px solid #bdbdbd;
+    margin-right: -1px;
+    font-size: 13px;
+  }
+  .cl-4 {
+      width: 50%;
+      padding: 0px 10px 10px 10px;
+      display: flex;
+      height: 500px;
+      overflow-y: hidden;
+  }
+  .cl-6 {
+      width: 100%;
+      float: none !important;
+      text-align: left;
+  }
+  .col-12.pl-0.pr-0.mt-4.mb-0 {
+      padding-left: 30px !important;
+  }
+  .column-7 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 380px) {
+  .mlc-4 {
+      margin-left: 0rem;
+  }
+  a.page-number {
+    color: #676767;
+    background: white;
+    padding: 8px 14px 5px 14px;
+    border: 1px solid #bdbdbd;
+    margin-right: -1px;
+    font-size: 13px;
+  }
+  .cl-4 {
+      width: 85%;
+      padding: 0px 10px 10px 55px;
+      display: flex;
+      height: 500px;
+      overflow-y: hidden;
+      text-align: center;
+  }
+  .cl-6 {
+      width: 100%;
+      float: none !important;
+      text-align: left;
+  }
+  .col-12.pl-0.pr-0.mt-4.mb-0 {
+      padding-left: 30px !important;
+  }
+  .column-7 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 12px;
+  }
+}

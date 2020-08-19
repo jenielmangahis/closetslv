@@ -1,0 +1,92 @@
+/*------------------------------------*\
+   Main
+\*------------------------------------*/
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.margin-auto {
+    margin: 0 auto;
+    width: fit-content;
+}
+.bold {
+    font-weight: 800;
+}
+.bold-400 {
+    font-weight: 400;
+}
+.bold-600 {
+    font-weight: 600;
+}
+.bold-400-gray {
+    font-weight: 400;
+    color: #444444;
+}
+.bold-600-gray {
+    font-weight: 600;
+    color: #444444;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.txt-yellow {
+    color: #f2c014;
+}
+.txt-white {
+    color: white;
+}
+.default {
+    width: 100%;
+    display: block;
+}
+.clearfix {
+    clear: both;
+}
+.mobile-only {
+    display: none !important;
+}
+.desktop-only {
+    display: block;
+}
+.text-medium {
+    font-size: 24px;
+    letter-spacing: 1.1px;
+    font-weight: 700;
+}
+input.transparent-input {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 6px 10px;
+    width: 100%;
+}
+select.transparent-select {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 6px 7px;
+    width: 100%;
+}
+input.transparent-input::placeholder {
+    color:white;
+}
+html, body {
+  overflow-x:hidden
+}
+@media (max-width: 1000px) {
+  body {
+    overflow-x: hidden;
+  }
+  .mobile-only {
+      display: block !important;
+  }
+  .desktop-only {
+      display: none !important;
+  }
+}
